@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test" pageWidth="595" pageHeight="842" columnWidth="540" leftMargin="30" rightMargin="25" topMargin="25" bottomMargin="25" isSummaryWithPageHeaderAndFooter="true" uuid="0e48b0a0-6ddd-4796-ac07-8d03dfaf3486">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Cat_Bg_Title" isDefault="true" mode="Opaque" backcolor="#808080" fill="Solid" vAlign="Middle" fontName="FreesiaUPC" fontSize="16" isBold="true"/>
+	<style name="Cat_Bt_Title" isDefault="true" mode="Opaque" forecolor="#000000" fill="Solid" vAlign="Middle" fontName="FreesiaUPC" fontSize="16" isBold="true"/>
+	<style name="Cat_Wt_Title" isDefault="true" mode="Opaque" forecolor="#000000" backcolor="#FFFFFF" fill="Solid" vAlign="Middle" fontName="FreesiaUPC" fontSize="16" isBold="true"/>
+	<style name="Cat_Hl_Common" isDefault="true" forecolor="#000000" fill="Solid" vAlign="Middle" fontName="FreesiaUPC" fontSize="14" isBold="true"/>
+	<style name="Cat_Ct_Common" isDefault="true" forecolor="#000000" fill="Solid" vAlign="Middle" fontName="FreesiaUPC" fontSize="12"/>
+	<parameter name="ReportSource" class="th.co.maximus.bean.ExportPDFReport"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="33" y="9" width="485" height="23" uuid="233c4d69-f2bb-49eb-8c15-8bf05978b8fb"/>
+				<textElement textAlignment="Center">
+					<font fontName="FreesiaUPC"/>
+				</textElement>
+				<text><![CDATA[ใบเสร็จรับเงิน/ใบกำกับภาษี  HELLOW]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="33" y="0" width="485" height="23" uuid="8b6050d9-ff58-460f-bc70-a5831e924167"/>
+				<textElement textAlignment="Center">
+					<font fontName="FreesiaUPC" pdfFontName="C:\EPISOffline\Epis-Offlines\src\main\webapp\WEB-INF\font\THSarabun.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<text><![CDATA[ใบเสร็จรับเงิน/ใบกำกับภาษี  HELLOW]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

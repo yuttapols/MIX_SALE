@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+/*table.wwFormTable {width: 100%; margin-top: 10px; margin-bottom: 10px; font-size: 14px;}
+table.wwFormTable tr {margin: 0px auto;}
+table.wwFormTable td {padding: 2px;}
+.tdLabel {width: 50%; text-align: right;}
+.tdLabel label {text-shadow: 0px 1px 1px #e0dcdc;}
+.required {color: #ff0000; padding-left: 2px; padding-right: 2px;}*/
+
+table.table-striped {
+	/*margin: 2px;
+	border: solid 1px #afd9ee !important;*/
+}
+table.table th {
+	text-shadow: 0px 1px 1px #a2a1a1;
+}
