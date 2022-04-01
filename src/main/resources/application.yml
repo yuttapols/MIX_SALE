@@ -1,0 +1,23 @@
+debug: true
+logging:
+    level:
+        root: INFO
+server:
+    port: 9081
+    servlet:
+        context-path: /RMU-API
+spring:
+    datasource:
+        password: 12345678
+        url: jdbc:mysql://localhost:3306/mixsale?useSSL=false
+        username: root
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                format_sql: true
+        show-sql: true
+    mvc:
+        pathmatch:
+            matching-strategy: ANT_PATH_MATCHER
+
