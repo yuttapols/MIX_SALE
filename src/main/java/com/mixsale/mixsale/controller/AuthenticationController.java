@@ -1,20 +1,25 @@
 package com.mixsale.mixsale.controller;
 
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
+import com.mixsale.mixsale.dto.UserDTO;
+import com.mixsale.mixsale.service.impl.AuthenticationService;
 
 @RestController
-@Slf4j
-@RequestMapping("/authentication")
+@RequestMapping("/api/authentication")
 public class AuthenticationController {
 
 	
-	@GetMapping("/test")
-	public Object test(){
-		return HttpStatus.OK;
+    @Autowired
+    AuthenticationService authenticationService;
+
+	@GetMapping("/login")
+	public UserDTO login(@RequestParam(name = "username") String username, @RequestParam(name = "password") String password) throws Exception{
+		
+		return authenticationService.login(username, password);
 	}
 }
