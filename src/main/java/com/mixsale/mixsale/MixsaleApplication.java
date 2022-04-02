@@ -1,4 +1,4 @@
-package com.mixsale.application;
+package com.mixsale.mixsale;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

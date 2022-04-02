@@ -1,4 +1,4 @@
-package com.mixsale.application;
+package com.mixsale.mixsale;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
