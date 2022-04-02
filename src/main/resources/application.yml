@@ -3,9 +3,9 @@ logging:
     level:
         root: INFO
 server:
-    port: 9081
+    port: 9090
     servlet:
-        context-path: /RMU-API
+        context-path: /MixSale
 spring:
     datasource:
         password: 12345678

@@ -1,4 +1,4 @@
-package com.mixsale.mixsale.config;
+package com.mixsale.config;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

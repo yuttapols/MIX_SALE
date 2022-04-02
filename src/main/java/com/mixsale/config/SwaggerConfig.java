@@ -1,4 +1,4 @@
-package com.mixsale.mixsale.config;
+package com.mixsale.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
