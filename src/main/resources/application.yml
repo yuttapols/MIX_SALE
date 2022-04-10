@@ -6,6 +6,8 @@ server:
     port: 9091
     servlet:
         context-path: /MIX-SALE
+    session:
+        timeout: 2m
 spring:
     datasource:
         password: 12345678

@@ -1,11 +1,11 @@
-package com.mixsale.mixsale.service;
+package com.mixsale.mixsale.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mixsale.mixsale.dao.AuthenticationDao;
 import com.mixsale.mixsale.dto.UserDTO;
-import com.mixsale.mixsale.service.impl.AuthenticationService;
+import com.mixsale.mixsale.service.AuthenticationService;
 
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService{

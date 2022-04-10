@@ -1,4 +1,4 @@
-package com.mixsale.mixsale.service.impl;
+package com.mixsale.mixsale.service;
 
 import com.mixsale.mixsale.dto.UserDTO;
 
