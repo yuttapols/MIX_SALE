@@ -27,9 +27,10 @@ public class AuthenticationDaoImpl implements AuthenticationDao{
 		
 		List<Object> param = new ArrayList<>();
 		
-		sql.append("select username, password, status from tbl_mix_sale_user user ");
+		sql.append("select username, password, role from tbl_mix_sale_user user ");
 		sql.append("where user.username = ? ");
 		sql.append("and user.password = ? ");
+		sql.append("and user.is_active = '1' ");
 		
 		param.add(userName);
 		param.add(password);
@@ -52,7 +53,7 @@ public class AuthenticationDaoImpl implements AuthenticationDao{
 			UserDTO dto = new UserDTO();
 			dto.setUserName(rs.getString("username"));
 			dto.setPassword(rs.getString("password"));
-			dto.setStatus(rs.getString("status"));
+			dto.setRole(rs.getString("role"));
 			return dto;
 		}
 	};

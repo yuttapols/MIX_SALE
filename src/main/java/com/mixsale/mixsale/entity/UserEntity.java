@@ -1,6 +1,7 @@
 package com.mixsale.mixsale.entity;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -25,9 +26,21 @@ public class UserEntity implements Serializable{
 	@Column(name="password")
     private String password;
 	
-	@Column(name="phone")
-    private String phone;
+	@Column(name="is_active")
+    private String isActive;
 	
-	@Column(name="status")
-    private String status;
+	@Column(name="role")
+    private String role;
+	
+	@Column(name="create_by")
+    private String createBy;
+	
+	@Column(name="create_date")
+    private Timestamp createDate;
+	
+	@Column(name="update_by")
+    private String updateBy;
+	
+	@Column(name="update_date")
+    private Timestamp updateDate;
 }

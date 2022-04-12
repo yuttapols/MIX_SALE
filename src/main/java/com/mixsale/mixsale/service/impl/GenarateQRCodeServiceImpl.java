@@ -63,7 +63,7 @@ public class GenarateQRCodeServiceImpl implements GenarateQRCodeService{
 		UserDTO username = (UserDTO) session.getAttribute(attrId);
 		
 		entity.setQrcode(key);
-		entity.setStatus("1");
+		entity.setIsActive("1");
 		entity.setCreateBy(null != username ? username.getUserName() : "system");
 		entity.setCreateDate(timestamp);
 		

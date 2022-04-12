@@ -7,6 +7,7 @@ public class UserDTO {
 	
 	private String userName;
 	private String password;
-	private String status;
+	private String isActive;
+	private String role;
 	
 }

@@ -14,7 +14,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="tbl_mix_sale_log_qrcode")
+@Table(name="tbl_mix_sale_qrcode")
 public class LogQrCodeEntity implements Serializable{
 
 	private static final long serialVersionUID = 8046445409623848330L;
@@ -26,13 +26,15 @@ public class LogQrCodeEntity implements Serializable{
 	@Column(name="qrcode")
     private String qrcode;
 	
-	@Column(name="status")
-    private String status;
+	@Column(name="period_type")
+    private String periodType;
+	
+	@Column(name="is_active")
+    private String isActive;
 	
 	@Column(name="create_by")
     private String createBy;
 	
-
 	@Column(name="create_date")
     private Timestamp createDate;
 	
