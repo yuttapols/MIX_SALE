@@ -8,6 +8,7 @@ import lombok.Data;
 public class CustomerDTO {
 
 	private String empId;
+	private Integer csSeq;
 	private String csName;
 	private String csLastname;
 	private String csIdcard;

@@ -1,8 +1,5 @@
 package com.mixsale.mixsale.controller;
 
-import java.io.PrintWriter;
-import java.util.Date;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -40,18 +37,4 @@ public class AuthenticationController {
 		return user;
 	}
 	
-	@GetMapping("/doSession")
-	public String doSession(HttpServletRequest request, HttpServletResponse response,
-			@RequestParam(name = "attrId") String attrId)
-			throws Exception {
-		
-		HttpSession session = request.getSession();
-		UserDTO username = (UserDTO) session.getAttribute(attrId);
-		String result = "0";
-		if (null != username) {
-			result = "1";
-		}
-
-		return result;
-	}
 }

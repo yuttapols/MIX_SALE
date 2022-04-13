@@ -26,6 +26,7 @@ import com.mixsale.mixsale.dto.UserDTO;
 import com.mixsale.mixsale.entity.QrCodeEntity;
 import com.mixsale.mixsale.repository.QRCodeRepository;
 import com.mixsale.mixsale.service.QRCodeService;
+import com.mixsale.mixsale.util.ConstantUtil;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -64,7 +65,7 @@ public class QRCodeServiceImpl implements QRCodeService{
 		
 		entity.setQrcode(key);
 		entity.setIsActive("1");
-		entity.setCreateBy(null != username ? username.getUserName() : "system");
+		entity.setCreateBy(null != username ? username.getUserName() : ConstantUtil.SYSTEM);
 		entity.setCreateDate(timestamp);
 		
 		qrCodeRepository.saveAndFlush(entity);
@@ -85,7 +86,7 @@ public class QRCodeServiceImpl implements QRCodeService{
 		int year = localDate.getYear();
 		int day = localDate.getDayOfMonth();
 
-		String suffix = "MIXSALE";
+		String suffix = ConstantUtil.BUSSINESS_PREFIX;
 		String running = year +""+ String.format("%02d", month) +""+ String.format("%02d", day) ;
 		String random = RandomStringUtils.randomAlphanumeric(10);
 		

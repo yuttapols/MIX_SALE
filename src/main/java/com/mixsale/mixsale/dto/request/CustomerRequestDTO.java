@@ -13,5 +13,6 @@ public class CustomerRequestDTO {
 	private String csIdLine;
 	private String csBranch;
 	private String isActive;
+	private String role;
 	private String attrId;
 }

@@ -27,6 +27,9 @@ public class CustomerEntity implements Serializable{
 	@Column(name="emp_id")
     private String empId;
 	
+	@Column(name="cs_seq")
+    private Integer csSeq;
+	
 	@Column(name="cs_name")
     private String csName;
 	
