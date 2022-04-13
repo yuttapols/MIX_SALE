@@ -15,7 +15,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name="tbl_mix_sale_qrcode")
-public class LogQrCodeEntity implements Serializable{
+public class QrCodeEntity implements Serializable{
 
 	private static final long serialVersionUID = 8046445409623848330L;
 

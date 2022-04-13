@@ -23,18 +23,18 @@ import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import com.mixsale.mixsale.dto.UserDTO;
-import com.mixsale.mixsale.entity.LogQrCodeEntity;
-import com.mixsale.mixsale.repository.GenarateQRCodeRepository;
-import com.mixsale.mixsale.service.GenarateQRCodeService;
+import com.mixsale.mixsale.entity.QrCodeEntity;
+import com.mixsale.mixsale.repository.QRCodeRepository;
+import com.mixsale.mixsale.service.QRCodeService;
 
 import java.util.Date;
 import java.util.HashMap;
 
 @Service
-public class GenarateQRCodeServiceImpl implements GenarateQRCodeService{
+public class QRCodeServiceImpl implements QRCodeService{
 	
 	@Autowired
-	GenarateQRCodeRepository genarateQRCodeRepository;
+	QRCodeRepository qrCodeRepository;
 
 	@Override
 	public void genarateQRCode(HttpServletRequest request, HttpServletResponse response, String attrId) throws Exception {
@@ -55,7 +55,7 @@ public class GenarateQRCodeServiceImpl implements GenarateQRCodeService{
 		
 		
 		// Save Data
-		LogQrCodeEntity entity = new LogQrCodeEntity();
+		QrCodeEntity entity = new QrCodeEntity();
 		
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 		
@@ -67,7 +67,7 @@ public class GenarateQRCodeServiceImpl implements GenarateQRCodeService{
 		entity.setCreateBy(null != username ? username.getUserName() : "system");
 		entity.setCreateDate(timestamp);
 		
-		genarateQRCodeRepository.saveAndFlush(entity);
+		qrCodeRepository.saveAndFlush(entity);
 		
 	}
 	

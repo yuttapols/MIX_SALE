@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mixsale.mixsale.service.GenarateQRCodeService;
+import com.mixsale.mixsale.service.QRCodeService;
 
 @RestController
 @RequestMapping("/api/qrcode")
-public class GenarateQRCodeController {
+public class QRCodeController {
 
 	@Autowired
-	GenarateQRCodeService genarateQRCodeService;
+	QRCodeService genarateQRCodeService;
 
-	@GetMapping("/QRCODE")
-	public void QRCODE(HttpServletRequest request, HttpServletResponse response,
+	@GetMapping("/genarate")
+	public void genarate(HttpServletRequest request, HttpServletResponse response,
 			@RequestParam(name = "attrId") String attrId) throws Exception {
 		genarateQRCodeService.genarateQRCode(request, response, attrId);
 	}
